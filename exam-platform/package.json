@@ -1,0 +1,31 @@
+{
+  "name": "exam-platform-app",
+  "version": "1.0.0",
+  "description": "Exam app using electon",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "author": "Cookie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "devDependencies": {
+    "electron": "^1.6.1",
+    "electron-packager": "^15.1.0"
+  },
+  "dependencies": {
+    "google-auth-library": "^0.9.8",
+    "googleapis": "20.1.0",
+    "jquery": "^3.1.0",
+    "localforage": "^1.4.2",
+    "materialize-css": "^0.97.7",
+    "pickadate": "^3.5.6"
+  }
+}

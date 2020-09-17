@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/materialize-css/dist/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="../fonts/icons.css" />
+    <link rel="stylesheet" href="../css/quiz.css" />
+    <title>Quiz App</title>
+  </head>
+
+  <body>
+    <div class="header blue accent-3">
+      <h1 class="logo">남은 시간 --></h1>
+      <h1>Seconds left: <span id="time-left">60</span></h1>
+    </div>
+    <section class="row">
+      <div class="left col m3">
+        <div class="card">
+          <div class="card-content q-jump-container">
+            ->
+            <a class="waves-effect waves-light btn q-jump">1</a>
+            <a class="waves-effect waves-light btn q-jump">2</a>
+            <a class="waves-effect waves-light btn q-jump">3</a>
+            <a class="waves-effect waves-light btn q-jump">4</a>
+          </div>
+        </div>
+        <a
+          class="btn waves-effect waves-light green accent-4 submit-btn col m12"
+          >Submit
+          <i class="material-icons right">send</i>
+        </a>
+      </div>
+
+      <div class="main col m9">
+        <div class="question">
+          <div class="card">
+            <div class="card-content">
+              <p class="question-content"></p>
+            </div>
+          </div>
+        </div>
+        <div class="answers card">
+          <ul id="q-options" class="collection card-content">
+            <li class="collection-item">
+              <input type="radio" name="options" value="1" id="option1" />
+              <label for="option1" class="option"></label>
+            </li>
+            <li class="collection-item">
+              <input type="radio" name="options" value="2" id="option2" />
+              <label for="option2" class="option"></label>
+            </li>
+            <li class="collection-item">
+              <input type="radio" name="options" value="3" id="option3" />
+              <label for="option3" class="option"></label>
+            </li>
+            <li class="collection-item">
+              <input type="radio" name="options" value="4" id="option4" />
+              <label for="option4" class="option"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.$ = window.jQuery = require("jquery");
+      window.localforage = require("localforage");
+      require("../js/template.js");
+      require("../quiz.js");
+      require("materialize-css");
+    </script>
+  </body>
+</html>
